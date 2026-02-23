@@ -1,0 +1,155 @@
+/* 웹폰트 연결-눈누 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Paperozi';
+}
+
+/* 공통요소 */
+
+.inner {
+    max-width: 1280px;
+    width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.main {
+    background-color: antiquewhite;
+}
+
+.main .main_visual {
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    /* 기준점 / 지정해놓으면 이동안됨 */
+}
+
+.main .main_visual .text {
+    max-width: 1280px;
+    width: calc(100% - 48px);
+    margin: 0 auto;
+    position: absolute;
+    /* 이동을함 */
+    top: 50%;
+    /* 부모를 기준으로 이동 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 이미지가 없으면 굳이 사용안해도 된다. */
+}
+
+.main .main_visual .text h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.main .main_visual .text p {
+    margin-bottom: 60px;
+}
+
+span {
+    background-color: aliceblue;
+    width: 139px;
+    height: 59px;
+    border-radius: 8%;
+    font-size: 24px;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.3;
+}
+
+/* ------------------------------------------------ */
+
+.section1 {
+    background-color: antiquewhite;
+}
+
+.inner {
+    background-color: aquamarine;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: calc(100% - 48px);
+}
+
+.inner .text {
+    text-align: center;
+}
+
+.inner .text h2 {
+    padding-top: 120px;
+    margin-bottom: 20px;
+    font-size: 30px;
+
+}
+
+.inner .text p {
+    margin-bottom: 60px;
+}
+
+.inner .img1 {
+    height: 600px;
+  
+    background-color: azure;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1 .inner {
+    background-color: aquamarine;
+}
+
+.section1 .inner .imgbox {
+    width: 33%;
+
+
+}
+
+.section1 .inner .imgbox h5 {
+    margin-top: 40px;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.section1 .inner .imgbox p {
+    font-size: 20px;
+}
+
+.imgbox img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.section1 .inner .img1 .imgbox .minitext {
+    margin: 40px;
+}
+
+.section2 {
+    padding-top: 120px;
+}
+
+.section2 .inner .text h5 {
+    font-size: 30px;
+}
+
+.section2 .inner .text .section2 .inner img {
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+}
